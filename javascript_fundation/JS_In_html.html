@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			JS in HTML
+			Embedding method 1,Use tags in pages <script> JS Code </script>
+			Add attribute type="text/javascript"
+		-->
+		<script type="text/javascript">
+			alert("Welcome");
+		</script>
+		
+		<!--
+			Embedding method 2, Use tag script in page, attribute src = "file path"
+			JS code, defined in another file, currently introduced by HTML, the file is essentially a text file with a suffix of .js
+		-->
+		<script src ="js/demo.js"  type="text/javascript"></script>
+		<!--
+			note:
+				If in the script tag, a file is introduced using src
+				The js code in the tag is all invalid and will not run.
+				The script tag can appear anywhere in the HTML.
+				Without affecting the functionality of JS, the sooner the tags appear, the better.
+		-->
+	</body>
+</html>
