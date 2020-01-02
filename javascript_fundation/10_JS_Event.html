@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+				* Events in JS
+				* 4 components
+				* Event source:
+				* In the page, elements that the user can manipulate are called event sources
+				* Button, text box, browser window
+				*
+				* Event:
+				* How the user operates the event source
+				* Mouse (click, double-click, hover, leave), keyboard operation (press, pop up)
+				*
+				* Listener:
+				* Eavesdropper (sound), pinhole camera (sound, image)
+				* For event source, install listener, mouse listener, keyboard listener
+				* As long as there is an operation, it will be captured by the listener, there is a processing method
+				* The listener will automatically call the processing method
+				*
+				* Processing method:
+				* Function
+			 */
+			
+			function fn(){
+				alert("按钮点击");
+			}
+			
+			function fnblur(){
+				alert("失去焦点");
+			}
+		</script>
+		
+		<!--
+			Button, bind event listener, mouse click
+			Label, add attribute onXXX
+			Event is sent, captured by the listener, function is called, event is processed
+			onclick = "function name ()"
+		-->
+		<input type="button" value="按钮" onclick="fn()" />
+		
+		<!--
+           	绑定事件,失去焦点事件
+        -->
+		<input type="text"  onblur="fnblur()" />
+	</body>
+</html>

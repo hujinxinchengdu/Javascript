@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var id=setInterval( function(){
+				alert("Timer");
+			} ,2000);
+			
+			/*setInterval( function(){
+				alert("Timer2");
+			} ,2000);
+			*/
+			
+			function fnClear(){
+			// window object, clearInterval, cancel timer
+			// Timer function, there will be return value, number, what is not important, it is unique in the page
+				
+				clearInterval(id);
+			}
+		</script>
+		
+		<input type="button" value="Close Timer" onclick="fnClear()"/>
+	</body>
+</html>
